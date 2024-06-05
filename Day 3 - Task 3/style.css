@@ -1,0 +1,80 @@
+body, html{
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+
+.container{
+display:grid;
+grid-template-areas: 
+"header header header"
+"sidebar content1 content1"
+"sidebar content2 content3"
+"footer footer footer";
+grid-template-rows: auto 1fr 1fr auto;
+grid-template-columns: 1fr 2fr 2fr;
+height:100vh;
+gap:10px
+}
+
+.header{
+    grid-area: header;
+    background:linear-gradient(to right, #8e2de2, #8e2de2);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    padding:10px;
+    height: 60px;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background:linear-gradient(to bottom,  #94eed2, #189d8b);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    padding:10px;
+}
+
+.content1{
+    grid-area: content1;
+    background:linear-gradient(to right, #6a11cb,#00c6ff);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    padding:10px;
+}
+
+.content2{
+    grid-area: content2;
+    background:linear-gradient(to right, #6a11cb,#00c6ff);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    padding:10px;
+}
+
+.content3{
+    grid-area: content3;
+    background:linear-gradient(to right, #6a11cb,#00c6ff);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    padding:10px;
+}
+
+.footer{
+    grid-area: footer;
+    background:linear-gradient(to right, #8e2de2, #8e2de2);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    padding:10px;
+    height: 60px;
+}
